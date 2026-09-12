@@ -1,0 +1,14 @@
+config:
+  path: first/file.yml
+  environemnt: staging
+
+  # simple array
+  labels:
+    - experimental
+    - accessibility
+
+  # array with objects
+  colors:
+    - name: red
+    - hexa_decimal_code: 10
+    - do_i_like_it: true
