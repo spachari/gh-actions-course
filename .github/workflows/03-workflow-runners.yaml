@@ -1,4 +1,4 @@
-name: 03-workflow-runners
+name: 03 - workflow-runners
 
 on: push
 
@@ -15,6 +15,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Show OS
+        shell: bash
         run: |
           echo "This job is running on an Windows runner."
           echo "Runner OS: $RUNNER_OS"
