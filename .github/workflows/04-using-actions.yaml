@@ -1,0 +1,27 @@
+name: 04 - Using Actions 
+
+# Steps to install react application
+# npx create-react-app --template typescript react-app   
+
+# this will create the react app in pwd in this folder react-app (useful for starting react)
+on: push
+
+
+    # 0. Checkout the code from the repository
+    # 1. Install dependencies of our react application
+    # 2. Execute automated tests
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Printing Folders
+        uses: ls 
+
+      
+
+    
+
