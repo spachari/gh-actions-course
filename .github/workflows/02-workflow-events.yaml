@@ -1,6 +1,12 @@
 name: 02 - Workflow events
 
-on: push
+on: 
+  push:
+  pull_request:
+  schedule:
+    - cron: '0/5 0 * * *'
+  workflow_dispatch:
+  
 
 jobs:
   echo:
