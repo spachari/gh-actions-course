@@ -1,7 +1,7 @@
 
 
 name: 01 - Building Blocks
-on: push # (trigger event) this workflow will be triggered when we push code to the repository
+# on: push # (trigger event) this workflow will be triggered when we push code to the repository
 
 jobs:
   echo-hello:
