@@ -13,10 +13,10 @@ jobs:
   echo-goodbye:
     runs-on: ubuntu-latest
     steps:
-      - name: Failed step
+      - name: Sucessful step
         run: |
-          echo "I will fail"
-          exit 1
+          echo "I will success"
+          exit 0
     # when a step fails, the whole job and workflow are considered as failed
     # if any step fails, any subsequent steps will not be executed by default
       - name: Say goodbye
