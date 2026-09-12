@@ -1,11 +1,11 @@
 
 
 name: 01 - Building Blocks
-on: push # this workflow will be triggered when we push code to the repository
+on: push # (trigger event) this workflow will be triggered when we push code to the repository
 
 jobs:
   echo-hello:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # specifies the type of virtual machine or environment, the job will execute on 
     steps: 
       - name: Say echo
         run: echo "Hello world"
@@ -21,3 +21,12 @@ jobs:
     # if any step fails, any subsequent steps will not be executed by default
       - name: Say goodbye
         run: echo "Goodbye!"
+
+
+# Q/A 
+# 1. By default, if you define three different jobs in a single workflow file 
+# without configuring any dependencies, how will they execute?
+
+# The jobs will all start simultaneously and run in parallel on separate runners
+
+# 2. An action is a reusable peice of code referenced in a step
