@@ -21,7 +21,7 @@ jobs:
       - name: Setup Node 
         uses: actions/setup-node@v3 # use this action
         with:
-          node-version: '20.*' # with this version
+          node-version: '24.*' # with this version
 
       - name: Print current working directory 
         run: |
