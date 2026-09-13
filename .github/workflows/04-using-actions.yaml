@@ -29,8 +29,6 @@ jobs:
       - name: Print current working directory 
         run: |
           pwd
-          ls 04-using-actions
-          ls 04-using-actions/react-app
       
       - name: Install dependencies
         run: npm ci 
