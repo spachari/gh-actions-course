@@ -4,7 +4,7 @@ name: 04 - Using Actions
 # npx create-react-app --template typescript react-app   
 
 # this will create the react app in pwd in this folder react-app (useful for starting react)
-on: push
+on: workflow_dispatch
 
 
     # 0. Checkout the code from the repository
@@ -33,6 +33,6 @@ jobs:
       - name: Install dependencies
         run: npm ci 
 
-      - name: Install dependencies
+      - name: Run tests
         run: npm ci     
 
