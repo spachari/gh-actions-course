@@ -8,6 +8,9 @@ on:
       debug:
         type: boolean
         default: false
+      test_input:
+        type: string 
+        default: test
 
 
 jobs:
