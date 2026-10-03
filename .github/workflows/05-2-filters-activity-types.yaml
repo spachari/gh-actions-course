@@ -6,6 +6,7 @@ on:
       - closed
     branches:
       - main
+# it's an and between types and branches
 
 jobs:
   echo:
